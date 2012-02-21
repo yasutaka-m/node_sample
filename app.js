@@ -5,7 +5,7 @@ var fcgiApp = require("./fcgi"),
 var myServer = http.createServer(function(req, res) {
 	setTimeout(function() {
 		res.writeHead(200, {"Content-type": "text/html"});
-		res.end("hello facebook" + Date.now());
+		res.end("おーとでぷろいてすと" + Date.now());
 		console.log("Wrote response.");
 	}, 1000);
 	//throw new Error("Bollocks.");
@@ -15,4 +15,4 @@ var myServer = http.createServer(function(req, res) {
 //myServer.listen(12345);
 
 // You do this:
-fcgiApp.handle(myServer);
+fcgiApp.h
